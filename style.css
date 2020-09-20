@@ -1,0 +1,107 @@
+.container-fluid{
+    padding: 0;
+}
+.header{
+    background-image: url(./img/BG.png);
+    min-height: 73px;
+}
+
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+
+
+.administrator__btn::before{
+    content: '\f2f6';
+    padding-right: 5px;
+    font-family: 'Font Awesome 5 free','Font Awesome 5 Brands';
+    font-weight: 900;
+     
+}
+.students__btn::before{
+    content: '\f06e';
+    padding: 3px  5px 0px 0px;
+    font-family: 'Font Awesome 5 free','Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 14px;
+     
+}
+.administrator__options .btn{
+    border-radius: 19px;
+    padding:5px 20px;
+    max-width:90%;
+    max-height: 36px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+}
+
+small{
+    padding: 5px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+}
+.students__user .message{
+    width: calc(100% - 85px);
+   
+}
+
+
+.students__user{
+    min-height: 92px;
+    
+   
+}
+.arrow{
+color:gray;
+font-size: 20px;
+margin-right: 15px;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.user{
+    height: 73px;
+}
+.user__avatar{
+height: 55px;
+width: 55px;
+}
+.user__list{
+    height: 64px;
+}
+.user__list-head{
+    font-size: 30px;
+}
+.user__sublist-item{
+   
+    padding-left: 16px; 
+    height: 56px;
+    @media screen and(min-width:764px) {
+        padding-left: 66px;  
+    }
+}
+li{
+    list-style: none;
+}
+
+
+.footer{
+    background-image: url(./img/_footer.png);
+}
+
+@media screen and (min-width:988px){
+    ul{
+        
+        
+        max-height: 194px;
+    }
+}
