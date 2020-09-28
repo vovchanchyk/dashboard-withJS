@@ -78,7 +78,7 @@ const User = function (place, name, img, sublistNumbers, dataRate) {
         userBodyItemIndex < userBodyPngClasses[userBodyIndex].length;
         userBodyItemIndex++
       ) {
-        console.log(userBodyItemIndex);
+       
         userBodyAvatar.classList.add(
           userBodyPngClasses[userBodyIndex][userBodyItemIndex]
         );

@@ -46,22 +46,21 @@ document.querySelector("form").addEventListener("submit", function (e) {
     if (options[i].selected) {
       selected++;
     }
-    if (isvalid && selected > 0) {
-      alert("thank you");
-    } else {
-      e.preventDefault()
-     
-    }
+  }
+  if (isvalid && selected > 0) {
+    console.log(5)
+  } else {
+    e.preventDefault();
+    console.log(6)
   }
 });
 
 $("#viewProfile").on("hide.bs.modal", function (e) {
-  let inputs = $('form div input');
-  let options = $('option')
-  inputs.css('border','1px solid black');
-  inputs.next().html("")
-  inputs.val("")
-  inputs.prop('checked', false)
-  options.prop('selected', false)
+  let inputs = $("form div input");
+  let options = $("option");
+  inputs.css("border", "1px solid black");
+  inputs.next().html("");
+  inputs.val("");
+  inputs.prop("checked", false);
+  options.prop("selected", false);
 });
-
