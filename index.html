@@ -256,25 +256,26 @@
 
 
           <form action="#" novalidate>
-            <div class="form-group">
-            <input type="text" id="name" placeholder="name" required>
+            <div class="form-group mb-0 mt-1">
+            <input class="m-1" type="text" id="name" placeholder="name" required>
             <label for="name"></label>
             </div>
-            <div class="form-group">
-            <input type="email" name="" id="email" placeholder="email" required pattern="[a-zA-Z0-9]{1,63}@[a-zA-Z0-9]{1,63}\.[a-zA-Z0-9]{1,5}">
+            <div class="form-group mb-0 mt-1">
+            <input class="m-1" type="email" name="" id="email" placeholder="email" required pattern="[a-zA-Z0-9]{1,63}@[a-zA-Z0-9]{1,63}\.[a-zA-Z0-9]{1,5}">
             <label for="email"></label>
             </div>
-            <div class="form-group">
-            <input type="password" name="" id="password" placeholder=" password" required minlength="5" maxlength="10">
+            <div class="form-group mb-0 mt-1">
+            <input class="m-1 pl-0" type="password" name="" id="password" placeholder=" password" required minlength="5" maxlength="10">
             <label for="password"></label>
             </div>
-            <div class="form-group">
-            <input type="checkbox" name="i egree" id="check" required>
-            <label for="check">i agree</label>
+            <div class="form-group  mt-1">
+            <input class="m-1" type="checkbox" name="i egree" id="check" required>i agree
+            <label for="check"></label>
             </div>
             <div class="form-group">
               <label for="my-select">choose a program</label>
               <select id="my-select" class="custom-select" name="">
+                <option value="">choose...</option>
                 <option>Test prep</option>
                 <option>Tutoring</option>
                 <option>homescholing</option>
@@ -282,12 +283,12 @@
             </div>
             <div class="form-group"> your gender
               <br>
-              <label class="">
-                <input type="radio" name="gender"> male
-              </label><br>
-              <label class="">
-                <input type="radio" name="gender"> female
-              </label>
+             
+                <input type="radio" name="gender" required> male
+              
+                <input type="radio" name="gender"> female 
+                <span></span>
+             
             </div>
 
 
