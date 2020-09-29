@@ -180,33 +180,14 @@ const User = function (place, name, img, sublistNumbers, dataRate) {
             "Systems of Equations",
           ],
         ];
-
-        for (
-          let containerIndex = 0;
-          containerIndex < datarateTitles.length;
-          containerIndex++
-        ) {
+        for(let containerIndex = 0; containerIndex < datarateTitles.length; containerIndex++){
           let rateList = document.createElement("ul");
-          rateList.classList.add("d-flex", "flex-column", "my-0");
+          rateList.classList.add("d-flex","flex-column","my-0");
           containerRate.appendChild(rateList);
-
-          for (
-            let liIndex = 0;
-            liIndex < datarateTitles[containerIndex].length;
-            liIndex++
-          ) {
+          for(liIndex=0;liIndex<datarateTitles[containerIndex].length;liIndex++){
             let liItem = document.createElement("li");
+            liItem.innerHTML =  `<i class="fas fa-angle-down text-success m-2"></i><span class="text-success">${this.dataRate[containerIndex][liIndex]}</span><span>${datarateTitles[containerIndex][liIndex]} </span>`
             rateList.appendChild(liItem);
-            let liIcon = document.createElement("i");
-            liIcon.classList.add("fas", "fa-angle-down", "text-success", "m-2");
-            liItem.appendChild(liIcon);
-            let liSpan = document.createElement("span");
-            liSpan.classList.add("text-success");
-            liSpan.innerText = this.dataRate[containerIndex][liIndex];
-            liItem.appendChild(liSpan);
-            let dataTitle = document.createElement("span");
-            dataTitle.innerText = datarateTitles[containerIndex][liIndex];
-            liItem.appendChild(dataTitle);
           }
         }
       }
